@@ -1,4 +1,4 @@
-const { PrismaClient } = require('@prisma/client');
+const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 const { hashSync, compareSync } = require("bcrypt");
 
@@ -8,13 +8,18 @@ const User = {
   },
 
   createUser: async (email, password) => {
-    const hashedPassword = hashSync(password, 10); // Hash the password
-    return await prisma.user.create({
-      data: {
-        email,
-        password: hashedPassword, // Store the hashed password in the database
-      },
-    });
+    const hashedPassword = hashSync(password, 10);
+
+    try {
+      return await prisma.user.create({
+        data: {
+          email,
+          password: hashedPassword,
+        },
+      });
+    } catch (error) {
+      throw new Error("Failed to create user in the database.");
+    }
   },
 
   getUserByEmail: async (email) => {
