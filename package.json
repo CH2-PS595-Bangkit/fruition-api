@@ -22,10 +22,12 @@
   "homepage": "https://github.com/CH2-PS595-Bangkit/fruition-api#readme",
   "dependencies": {
     "@prisma/client": "^5.7.0",
+    "@sendgrid/mail": "^8.1.0",
     "bcrypt": "^5.1.1",
     "express": "^4.18.2",
     "express-validator": "^7.0.1",
     "firebase": "^10.7.1",
+    "googleapis": "^129.0.0",
     "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {

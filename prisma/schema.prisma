@@ -9,9 +9,20 @@ datasource db {
 
 model User {
   id       Int      @id @default(autoincrement())
+  username String   @unique
   email    String   @unique
   password String
-  histories History[] // Menambahkan bidang relasi untuk menghubungkan User dengan History
+  token    String?   @db.VarChar(500)
+  histories History[]
+  profile  Profile[]
+}
+
+model Profile {
+  id        Int      @id @default(autoincrement())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int
+  name      String?
+  avatar    String?
 }
 
 model History {

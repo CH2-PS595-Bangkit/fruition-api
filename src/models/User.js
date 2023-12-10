@@ -7,13 +7,14 @@ const User = {
     return await prisma.user.findMany();
   },
 
-  createUser: async (email, password) => {
+  createUser: async (email, username, password) => {
     const hashedPassword = hashSync(password, 10);
 
     try {
       return await prisma.user.create({
         data: {
           email,
+          username,
           password: hashedPassword,
         },
       });
@@ -30,7 +31,26 @@ const User = {
     });
   },
 
-  // Add other necessary functions
+  getUserByUsername: async (username) => {
+    return await prisma.user.findUnique({
+      where: {
+        username,
+      },
+    });
+  },
+  
+  updateUserToken: async (userId, token) => {
+    return await prisma.user.update({
+      where: { id: userId },
+      data: { token: token },
+    });
+  },
+
+  getUserByToken: async (token) => {
+    return await prisma.user.findUnique({
+      where: { token: token },
+    });
+  },
 };
 
 module.exports = User;
