@@ -7,12 +7,20 @@ const History = {
     return await prisma.history.findMany();
   },
 
-  createHistory: async (userId, fruit, fruitImg) => {
+  getAllHistoriesByUserId: async (userId) => {
+    return await prisma.history.findMany({
+      where: {
+        userId: userId,
+      },
+    });
+  },
+
+  createHistory: async ({ userId, fruit, imagePath }) => {
     return await prisma.history.create({
       data: {
         userId,
         fruit,
-        fruitImg,
+        imagePath,
       },
     });
   },

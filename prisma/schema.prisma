@@ -8,21 +8,21 @@ datasource db {
 }
 
 model User {
-  id       Int      @id @default(autoincrement())
-  username String   @unique
-  email    String   @unique
-  password String
-  token    String?   @db.VarChar(500)
+  id        Int       @id @default(autoincrement())
+  username  String    @unique
+  email     String    @unique
+  password  String
+  token     String?   @db.VarChar(500)
   histories History[]
-  profile  Profile[]
+  profile   Profile[]
 }
 
 model Profile {
-  id        Int      @id @default(autoincrement())
-  user      User     @relation(fields: [userId], references: [id])
-  userId    Int
-  name      String?
-  avatar    String?
+  id     Int     @id @default(autoincrement())
+  user   User    @relation(fields: [userId], references: [id])
+  userId Int
+  name   String?
+  avatar String?
 }
 
 model History {
@@ -30,7 +30,7 @@ model History {
   user      User     @relation(fields: [userId], references: [id])
   userId    Int
   fruit     String
-  fruitImg  String
+  imagePath String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
