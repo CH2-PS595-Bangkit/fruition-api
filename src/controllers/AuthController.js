@@ -49,24 +49,45 @@ const AuthController = {
     }
   },
 
-  authenticateToken: async (req, res, next) => {
-    const token = req.headers.authorization;
-    if (!token) {
-      return res.sendStatus(401);
-    }
-
+  logout: async (req, res) => {
     try {
-      const user = await User.getUserByToken(token);
-      if (!user) {
-        return res.sendStatus(403);
-      }
-      req.user = user;
-      next();
+      // Hapus token dari database atau nonaktifkan token yang terkait dengan pengguna
+      // Contoh: Menghapus token dari user yang sedang masuk (dari field token di database)
+      const userId = req.user.id; // Mengambil ID pengguna dari data yang telah disimpan di middleware
+
+      // Lakukan proses hapus token di sini (berdasarkan kebutuhan database atau sistem Anda)
+      await User.updateUserToken(userId, null); // Misalnya, set token pengguna menjadi null
+
+      return res.json({
+        success: 1,
+        message: "Logout successful",
+      });
     } catch (error) {
       console.error(error);
-      return res.sendStatus(500);
+      return res.status(500).json({
+        error: "Failed to logout",
+      });
     }
   },
+
+  // authenticateToken: async (req, res, next) => {
+  //   const token = req.headers.authorization;
+  //   if (!token) {
+  //     return res.sendStatus(401);
+  //   }
+
+  //   try {
+  //     const user = await User.getUserByToken(token);
+  //     if (!user) {
+  //       return res.sendStatus(403);
+  //     }
+  //     req.user = user;
+  //     next();
+  //   } catch (error) {
+  //     console.error(error);
+  //     return res.sendStatus(500);
+  //   }
+  // },
 };
 
 module.exports = AuthController;

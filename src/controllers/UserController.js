@@ -16,12 +16,12 @@ const UserController = {
 
   createUser: async (req, res) => {
     const { email, username, password } = req.body;
-  
+
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
-  
+
     try {
       const existingUser = await User.getUserByEmail(email);
       const existingUsername = await User.getUserByUsername(username);
@@ -31,14 +31,14 @@ const UserController = {
       if (existingUsername) {
         return res.status(400).json({ error: "Username is already registered" });
       }
-  
+
       const newUser = await User.createUser(email, username, password);
       const { id } = newUser;
-  
+
       return res.status(201).json({
         success: 1,
         message: "User created successfully",
-        userId: id, // Optionally, you can send back the user ID
+        userId: id,
       });
     } catch (error) {
       console.error(error);
