@@ -34,9 +34,10 @@ const User = {
   },
 
   getUserById: async (id) => {
+    const parsedId = parseInt(id, 10);
     return await prisma.user.findUnique({
       where: {
-        id,
+        id: parsedId,
       },
     });
   },
@@ -70,6 +71,28 @@ const User = {
         token: token,
       },
     });
+  },
+
+  updateUser: async (id, userData) => {
+    try {
+      const parsedId = parseInt(id, 10);
+      const updatedUserData = {};
+
+      if (userData.password) {
+        const hashedPassword = hashSync(userData.password, 10);
+        updatedUserData.password = hashedPassword;
+      }
+
+      const updatedUser = await prisma.user.update({
+        where: { id: parsedId },
+        data: updatedUserData,
+      });
+
+      return updatedUser;
+    } catch (error) {
+      console.error("Error while updating user:", error);
+      throw new Error("Failed to update user in the database.");
+    }
   },
 };
 

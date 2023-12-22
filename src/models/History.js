@@ -15,12 +15,32 @@ const History = {
     });
   },
 
-  createHistory: async ({ userId, fruit, imagePath }) => {
+  createHistory: async ({ userId, fruit, imagePath, accuracy }) => {
     return await prisma.history.create({
       data: {
         userId,
         fruit,
+        accuracy,
         imagePath,
+      },
+    });
+  },
+
+  deleteHistoryById: async (historyId) => {
+    const parsedId = parseInt(historyId, 10); // Parse historyId ke tipe data Integer
+    return await prisma.history.delete({
+      where: {
+        id: parsedId,
+      },
+    });
+  },
+  
+  
+  getHistoryById: async (historyId) => {
+    const parsedId = parseInt(historyId, 10); // Parse historyId ke tipe data Integer
+    return await prisma.history.findUnique({
+      where: {
+        id: parsedId,
       },
     });
   },

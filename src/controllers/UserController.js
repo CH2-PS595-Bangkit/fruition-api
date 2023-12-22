@@ -48,6 +48,31 @@ const UserController = {
     }
   },
 
+  updateUserPassword: async (req, res) => {
+    const { id } = req.params;
+    const { newPassword } = req.body;
+
+    try {
+      // Memastikan password baru diberikan sebelum melakukan update
+      if (!newPassword) {
+        return res.status(400).json({ error: "New password is required" });
+      }
+
+      // Memperbarui password pengguna
+      await User.updateUser(id, { password: newPassword });
+
+      return res.status(200).json({
+        success: 1,
+        message: "Password updated successfully",
+      });
+    } catch (error) {
+      console.error(error);
+      return res.status(500).json({
+        error: "Failed to update password. Please try again later.",
+      });
+    }
+  },
+
   forgotPassword: async (req, res) => {
     const { email } = req.body;
 

@@ -5,7 +5,6 @@ const userRoutes = require('./user.routes');
 const historyRoutes = require('./history.routes');
 const loginRoutes = require('./login.routes');
 const homeRoutes = require('./home.routes');
-const predictionRoutes = require('./prediction.routes'); // Impor rute prediksi
 
 // Rute untuk tampilan service success pada http://domain.com/
 router.get('/', (req, res) => {

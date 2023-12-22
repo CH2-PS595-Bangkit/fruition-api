@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { body } = require('express-validator');
 const UserController = require('../controllers/UserController');
+const authenticateToken = require('../middleware/middleware');
 
 // Route untuk mendapatkan semua pengguna
 router.get('/users', UserController.getAllUsers);
@@ -25,5 +26,7 @@ router.post(
   ],
   UserController.forgotPassword
 );
+
+router.put('/:id/update-password',authenticateToken.authenticateToken, UserController.updateUserPassword);
 
 module.exports = router;

@@ -6,7 +6,8 @@ const authenticateToken = require('../middleware/middleware');
 
 // router.get('/', authenticateToken.authenticateToken, HistoryController.getAllHistories);
 router.post('/', authenticateToken.authenticateToken, HistoryController.createHistory);
-router.get('/histories/:id', authenticateToken.authenticateToken, HistoryController.getAllHistories);
+router.get('/allhistories', authenticateToken.authenticateToken, HistoryController.getAllHistories);
+router.delete('/:historyId', authenticateToken.authenticateToken, HistoryController.deleteHistory);
 // tambahkan rute lainnya jika diperlukan
 
 module.exports = router;

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "fruition-api-408523",
+  "private_key_id": "dca315b8b1df67fd50bb6ecb2562c04944a01644",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDnC9ueg0KhqViI\nnAvrb45TbZ7aFhEOWfEyMj5yIa5R8Ga4PzUw3NwqRo9gZ50AMUklopDbFdFZ0KIp\nGdXIrOQw4L8HTKZTiHOIvzDcFqfQ6tfNpbgOjXhKkLmLLh2WcK952fITcdJEG039\nCq71+T3oJ58WJ66QeqY6xu3QeWt94aF4xIYp3P/2RoJvmhXrxULc9ZaBe+doUBa1\nVpYz60j2P/+56nAXtvZwO6873JTn6Tg7y26ApQk+lbqPOtk8MHeH9Ic37vVMiHEA\nZQyeu5ied7Rpmb1T2wgyDQrqRNB/YcAtWY/4y+0OMY6jfuY4EiKKIuJxUAYvOkAJ\nmZGvOzuFAgMBAAECggEAI6wOg/pDIt+ZFjp1kqueH15o7MYEayFS3ouoXYm6ttb1\nnRPRPBKVgYd0Yo+My3dQkll3oQPM11+hcdQV0E51SuCgTdm1QmdqYx4Vxp1O2rAv\nkoY4FTMdc/HFW+pKUixiw171g7AKpU5L67onCj4pozre0pZc2ty85o1JMWtVv9D3\nulpwY0gRhPj2Ijp1zoSM7ssOgqRFJU6gbiL1JE3ctTZdkQa01Q/dXYU5G1oMbvth\nATqzF3dZS8+MBkb0I1421wGZdT1l2GwvD9WfENsXIxBzJOt8h3IjV59rZvXiMj1g\nkzzP/KXkq4LQS/SQ0Ah7UsNB2z7zoyJdQmxrHMAl7wKBgQDzN/HWRHjlBsojGaps\nYFCG9NCPpP5VxUM2lTAeSKCUP/kBMlJHTf76QJGKvpqKtYRbHJHqq8TTG5a65pG0\n7rnRpeERUGTschQAnVsGlPV3Kkm/q5qm1l5faM064YPDu/0pePdIvzSrJh4XR4lH\nrDdQb2IiCy3giKdg86AYZj5IDwKBgQDzMCiZtwEV1iKxdI9HwpN5mVW1l5DQqGG5\n8OEzvbnf6QPXKlF8oEJkQu2w2lVcqXybuxtMZQZyMgDJWAEWYRzgrNiQB+1V71bj\nhw/e1gszTJhdBSzbcPWJTlwPRmqE7GPY1h/ihL+DwLJbN/X0P4q8kV7wILBwNUrE\nwPLemG/PKwKBgCAys81N20NWlsP2zdzzEzYKiuG5UgJAzxkWvvwDWV7G6UwDQWk3\nJh4zFhFsEkFyrkbxjU+n1bKs4FN12qw9PlRGxXjpT7MNlyBNtJM2fRh9fK3nJd4Y\nWv3+fczhtfPfmzA2V2ZGCc7uiOVEDyRx5BC97hvbpwMmlCH9nqAcSPp5AoGAD1Bm\nDh//Gn/smV4ss6kmHk8wnYnY3brsxIfNtrNo5BfJXSBWF1IEPEoWq79kBrzJkwj6\nVBo8iK5rbEJ1dxJQfjmEPbWyFWpH/3X+4tp5xBY7tgfgZkU7wRTFKVUW2h4Ev5/k\nTCBt6v8UfDgO7f2eX/eLkfWNBtPkTHWWFbxlthcCgYEA5MEzehMlbnAaj8qJunEL\nsrjHMR/msetIXi3qbIu8jj7qeX1pU+zcLG/5Vks9XqbDoec8d4NLL7QPuqiwZRdi\nVUG1K6C7v5BoO6xyRwXjNrWZq2o9sU+lLJsMeuX+rIUDCQ690B6F/dfRZQq3fPlQ\nQqietpHBozWjLLGJ4pr1n8o=\n-----END PRIVATE KEY-----\n",
+  "client_email": "admin-bucket@fruition-api-408523.iam.gserviceaccount.com",
+  "client_id": "114323650344457473426",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/admin-bucket%40fruition-api-408523.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

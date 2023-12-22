@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "fruition-api-408523",
+  "private_key_id": "4c340cf166bfc1fddc58e65c45d7e26d9f42982c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC9ma8pwmv52U6q\nq+Z3+3jrop6ADbZm67M41pb44MYp74rH0Jh6I+UmSj0RJm7I2TV4RMr5wAT9jQPI\nnaoU/LBLatk4XFa0XgWD1ALLoGK5+Klh6vqT2aZMb80+ti6xxUkwKaoy+ouOx42G\nMQNbZ+4QFbmRthN/pyeaozsr72Uxl2wlmZ88OHZNm/hHmdy/lr7imKDz+gM4sZL5\nPBESZWXfnJ38aYmiJRSDee/mZOdmFDZYvEBYqMUVbp/zpjV1UVgMAlHxoMTZP2xl\nnu3YRdO/rOH3K06Lgxb9yj8MBWKHkr8V5JvMVzN1epp7x6EoFg96+gVtMHFUVpvc\nQmUUOhGpAgMBAAECggEATNSDG5vyX0uEyjpgaQxZQrsiGWf1Gx22AXlLskx7YLD1\n/uRzdUMob2yz9Egrqm4CcdsGmVALdad3+gqRynFfCyCgJ2ubovlaqMH35AX5G708\n/jXXFqSi8+R2Okxe/aCheMfZdVD7zn7kxZUE9DxYRuJW0UoD+r2EmfA9YR9gVUiB\ndoNh7GeeRZXBVZlIjYg30fAPIjVJXw+7mOLy3BXA8DqTAksYy6mTn5Lh11m7/aZN\nqgLy4kJ0rjzkSr/7jaGJxggei6Z+ZOeu76DYI/bQ2wgCKoafMEJqEOVpm3XMqnHR\nnFB4oMFJ2IvORxx/l1aXATFT+HaItqJ0vgIOv5K9hQKBgQDd74MGrQp5rs/GN+gO\nZYRxTh3Ihq7hca1toA045uw09cntcWYuVJxrbtIM9zD/qmD9p0R2XTv8shpb+Mmq\nTyjucCQ1c79HiyvkXIF6i3Z5EhReUPHpScUTuz+qf5D/MQl01m5qD0He0REu/w/d\nCceGzfw58fxbAm6gLe00Ngvs5wKBgQDas6B3sK6LUGD+bY83shVpyzIVry0oHe+U\nA+BjykLmftjRccQP2Jd7xd26wQ1fTLTWgDQUxiwZ8T0MVW7U9DHYiU/1pWwY89RH\nD7hmdj3YdSgufNB4hJjUWbXd9yRtDWywTTARAoS67hm/+r0yMe5sYDfS7NIx5bgF\ns6VqErYq7wKBgFNw+ZJI/OdDEls0Kcs/38u50vjRqm6YjtvokRATwjsnLgRX3lMM\n/MJnqBG33nRBWrYDbXoTE7quO7rYjvm5SWpcP0DZg9EiQh5ZqVSpmqFqar4LMOjF\nE5OXkxhHXfyUMzn6ZQj7M4jSkeNZgl1Yj+vfBjXDBV4yS+VtXwGCUHmBAoGBAMGt\nTbBxYUGyvxLSh4B1Tw1Pi100szLRv/c+r5rv5esl7nEc5Np7nztXcRMQH/2Deqpz\nAqxbC3c18jBYADzKvNHcWFlcU6yNUjJUM6NZl094AUuZ8SypkIaNo8ecND/3IYfH\n84c8ybqZXWhsbtxi55hGZWl/nG3f1+YEv7p+M6E1AoGBAJWav2JxR5drJfecjFHn\ntampHRbFWcbkBaaGsFky3/+z9/Ct3qKlc/tp6Hwcjk4Io6SEt7btWBaVYLvL2tI0\nuBcfiJWzP0rR9NUh614JvD3DgGORjofmKtJQMZaYrz7FM53PA88DNRWKpdI5ar9B\nu6L0npXST//AzOYdiAG7N87O\n-----END PRIVATE KEY-----\n",
+  "client_email": "fruition-api-408523@appspot.gserviceaccount.com",
+  "client_id": "101320945040459555757",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fruition-api-408523%40appspot.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

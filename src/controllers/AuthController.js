@@ -14,7 +14,7 @@ const AuthController = {
       }
 
       if (!user) {
-        return res.json({
+        return res.status(401).json({
           success: 0,
           data: "Invalid email, username, or password",
         });
@@ -30,13 +30,16 @@ const AuthController = {
         // Update user's token in the database
         await User.updateUserToken(id, token);
 
-        return res.json({
+        return res.status(200).json({
           success: 1,
           message: "Login successful",
           token,
+          id,
+          username,
+          email,
         });
       } else {
-        return res.json({
+        return res.status(401).json({
           success: 0,
           data: "Invalid email, username, or password",
         });
